@@ -14,5 +14,5 @@ jobs:
       - name: install mkdocs
         run: pip install mkdocs
       - name: generate and deploy mkdocs
-        working-directory: ./denkraum-wiki
+        working-directory: denkraum-wiki
         run: mkdocs gh-deploy --force --clean --verbose
