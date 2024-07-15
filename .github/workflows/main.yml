@@ -12,5 +12,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs
-      - run: cd ./denkraum-wiki
-      - run: mkdocs gh-deploy --force --clean --verbose
+      - run: cd ./denkraum-wiki | mkdocs gh-deploy --force --clean --verbose
