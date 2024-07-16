@@ -3,7 +3,6 @@ site_url: https://studio-denkraum.github.io/
 
 theme:
   name: material
-  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -37,10 +36,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: favicon.png
+  favicon: logo.png
   logo: logo.png
-  icon:
-    logo: SDicon
 
 plugins:
   - search
@@ -62,7 +59,4 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
 
