@@ -14,16 +14,16 @@
   <li>Add a "CollisionShape3D" as a child of the HitBox node</li>
   <li>Add a "Shape" in the inspector of CollisionShape3D and adjust it in the viewport</li>
   <li>If not already present, add a "AnimationPlayer" and create an animation.</li>
-  <li> Now you need to create a keyframe for the "disabled" property of the CollisionShape3D. For that press that button:
+  <li> Now you need to create a keyframe for the "disabled" property of the CollisionShape3D. For that press that button:  
 		
   ![image](https://github.com/user-attachments/assets/55d9f991-20a9-4212-a17b-5b3ece5cf0ba)
   
   </li>
-  <li> Create a keyframe (right-click in the timeline) at the end of the animation and enable it.
+  <li> Create a keyframe (right-click in the timeline) at the end of the animation and enable it.  
     
   ![image](https://github.com/user-attachments/assets/e9fe984e-3537-4694-b9c8-93e4f12ba5bc)
   
-  Select the "RESET" Animation and set "disabled" property to "true".  
+  Select the "RESET" Animation and set "disabled" property to "true".    
 
   ![image](https://github.com/user-attachments/assets/92bc529f-0b2e-45ac-a3d7-23a2d4455389)
 
