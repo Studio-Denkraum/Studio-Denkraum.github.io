@@ -16,7 +16,7 @@ Our mission is to create immersive and innovative games that resonate with playe
 
 For more insights into our projects, development process, and to contribute, check out our GitHub page:
 
-[Studio Denkraum on GitHub](https://github.com/Studio-Denkraum/game-dev)
+[Studio Denkraum on GitHub](https://github.com/Studio-Denkraum/game-dev){:target="_blank"}
 
 Thank you for being part of our journey. Let's create something amazing together! 🌟
 
