@@ -38,6 +38,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: favicon.png
+  logo: logo.png
   icon:
     logo: SDicon
 
