@@ -1,11 +1,9 @@
-# Working with Hit- and Hurtboxes
-
 ## Definition
 
 **Hit boxes** are areas where an attack will hit and do damage.   
 **Hurt boxes** are areas where a player or bot can be hurt by another's attack.
 
-## How to use them
+## How to Use
 
 ### Hitbox
 
@@ -45,7 +43,7 @@ Image_3:
   <li>make sure the root node has a script with the method "take_damage(amount)"</li>
 </ol>
 
-## Detailed Information:  
+## Code Implementation 
 
 ```py linenums="1"
 class_name HitBox

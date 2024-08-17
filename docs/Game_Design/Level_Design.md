@@ -1,14 +1,15 @@
-### Level Design
+## Inspo
 
 Zum Thema Design der "Level"/Räume/Biome Map
 -> finde es sehr cool, dass es bei [Celeste](https://www.youtube.com/watch?v=cX9NJPwseIQ&ab_channel=EncryptedDuck) Chapter gibt, in denen sich der Mood visuell und von der Musik her stark unterscheidet
 
-#### Level-Ideen
+### Level Design Ideen
 - Verlassende Gleise / Bahnstation (komplett Überwuchert, vereinzelnt Züge / Abteile)
 
 ***
 
-**3D Background/Tilemap:**
+## 3D Background/Tilemap
+
 Nach kurzer Recherche hab ich herausgefunden, dass man in Godot GripMaps (https://docs.godotengine.org/en/stable/tutorials/3d/using_gridmaps.html) benutzen kann.
 
 "Enter the gungeon" benutzt dasselbe Prinzip, um einen 2.5D look zu generieren:
