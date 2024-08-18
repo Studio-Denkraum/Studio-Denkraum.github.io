@@ -1,3 +1,11 @@
+#### Inspiration 
+- Path of Exile
+- Deadcells
+- Risk of Rain 2
+- Hades
+- (TFT, Transistor, etc)
+
+
 ### Environment Design
 
 ![image](https://github.com/user-attachments/assets/f5f4de13-299c-42fa-b6ce-14867a3ddb78)
