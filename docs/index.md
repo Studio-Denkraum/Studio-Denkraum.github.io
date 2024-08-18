@@ -1,6 +1,6 @@
-# Welcome to Studio Denkraum's Wiki! 🎮✨
+# Welcome 
 
-## Hello and Welcome! 👋
+## Hello and to Studio Denkraum's Wiki! 🎮✨👋
 
 We're thrilled to have you here! Welcome to the official wiki for Studio Denkraum, a passionate and creative indie game development team. This wiki is primarily for our internal development, but we hope it offers a glimpse into the heart and soul of our studio.
 
