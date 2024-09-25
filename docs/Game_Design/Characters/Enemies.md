@@ -7,3 +7,4 @@ If the Player leaves the InteractionArea the enemy stops moving.
 - all of the Environment of the Game needs to be a child of NavigationRegion3D
 - Enemy needs a NavigationAgent3D
 - Enemy needs InteractionArea3D
+<img width="296" alt="image" src="https://github.com/user-attachments/assets/79776bdd-ab0c-42bd-8ef4-7e967978eaed">
