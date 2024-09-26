@@ -6,7 +6,8 @@ All abilitys are saved in the "abilities" folder.
 
 Because of the way abilities are loaded it is **very** important that the folder and the script have the same name.
 
-![image](https://github.com/user-attachments/assets/55d9f991-20a9-4212-a17b-5b3ece5cf0ba)
+![image](https://github.com/user-attachments/assets/05952247-11c3-4c9a-9b18-e8b0558360d9)
+
 
 ##Components of an Ability
 
