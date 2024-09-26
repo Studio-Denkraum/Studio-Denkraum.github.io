@@ -1,0 +1,18 @@
+##Where do I create a new Ability
+
+All abilitys are saved in the "abilities" folder. 
+
+##File Naming 
+
+Because of the way abilities are loaded it is **very** important that the folder and the script have the same name.
+
+![image](https://github.com/user-attachments/assets/55d9f991-20a9-4212-a17b-5b3ece5cf0ba)
+
+##Components of an Ability
+
+The minimal requirements of an ability is a node3D with the same name as the ability.
+Here a script controlls the fundamental executions and therefore **requires** a function with the name "execute".
+
+The main functionality of the ability is handeled in components which are added as childen to the root node. 
+
+![image]()
