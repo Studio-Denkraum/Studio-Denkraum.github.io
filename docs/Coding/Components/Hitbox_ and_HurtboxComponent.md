@@ -42,6 +42,51 @@ The reason for this is, that the hitbox and hurtbox do not know the stats of the
 
 - The HitboxComponents communicates that it collided with a Hurtbox to the Ability --> i_hit_something(hurtbox). 
 The HitboxComponents connects to the _on_area_entered()-signal of its child (the Hitbox) to detect collision.
-- The Ability knows its stat and sends the Hurtbox a signal containing the received damage --> get_damage(damage). 
-- The Hurtbox itself does not change anything about the Player aka its health. 
-Instead it relays the damage to the StatComponent, where the damage is actually taken.
+
+```py linenums="1"
+# HitboxComponent.gd
+extends Area3D
+class_name Hitbox
+
+@export var parent_node: Node3D
+@export var hitbox: CollisionShape3D
+
+signal i_hit_something(hurtbox)
+
+func _on_area_entered(area3D: Area3D) -> void:
+	if area3D is Hurtbox:
+		i_hit_something.emit(area3D)
+
+```
+
+- The Ability knows its stat and sends the Hurtbox a signal containing the received damage --> get_damage(damage).
+
+```py linenums="1"
+# ProjectileComponent.gd
+extends RigidBody3D
+
+...
+
+func _on_hitbox_component_i_hit_something(hurtbox: Hurtbox) -> void:
+	hurtbox.take_damage(ability_resources.damage, ability_resources.damagetype)
+
+```
+
+- The Hurtbox itself does not change anything about the Player aka its health.
+  Instead it relays the damage to the StatComponent, where the damage is actually taken.
+
+```py linenums="1" 
+# HurtboxComponent.gd
+extends Area3D
+class_name Hurtbox
+
+@export var stat_component: Node
+@export var parent_node: Node3D
+@export var hurtbox: CollisionShape3D
+
+func take_damage(damage: int, damage_type: Enum.DamageType) -> void:
+	if (stat_component):
+		stat_component.take_damage(damage, damage_type)
+```
+
+
