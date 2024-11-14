@@ -7,11 +7,12 @@ Handle changes to the base stats of an entity (Player, Enemy, NPC)
 ### Properties
 
 **stat**: StatResource
---> Resource with the entities stats (*data/stat/stat_resource.gd*)
+→ Resource with the entities stats (*data/stat/stat_resource.gd*)
 
 ### Stat Changes
 
 Health and Energy can be instantiously be changed e.g. by using Energy for abilities or getting hit:
+
 - `func take_damage(damage: int, damage_type: Enum.DamageType)`
 - `func use_energy(amount: int)`
 - `func heal(amount: int)`
@@ -67,13 +68,14 @@ When a new effect is added to the Queue, it is first checked, if the same effect
 
 Every tick, the effects in the queue are applied:
 
-1. Check if effect has finished (AND is not indefinite) -> remove effect from queue and associated condition from entity
-2. Effect has not finished -> Using the external script *global/utility.gd* to apply the set effect to the stat (`Utility.apply_effect(effect: EffectResource, stat_resource: StatResource)`)
+1. Check if effect has finished (AND is not indefinite) → remove effect from queue and associated condition from entity
+2. Effect has not finished → Using the external script *global/utility.gd* to apply the set effect to the stat (`Utility.apply_effect(effect: EffectResource, stat_resource: StatResource)`)
 
 To apply the effect, three values from the EffectResource are important:
-- `var stat: Enum.Stat` -> which stat is impacted (health, energy, ...)
-- `var value := 0.0` -> what value is applied in the effect?
-- `var procedure: Enum.StatProcedure` -> how is the value applied?
+
+- `var stat: Enum.Stat`: which stat is impacted (health, energy, ...)
+- `var value := 0.0`: what value is applied in the effect?
+- `var procedure: Enum.StatProcedure`: how is the value applied?
 
 ```py linenums="1"
 # global/enum.gd
